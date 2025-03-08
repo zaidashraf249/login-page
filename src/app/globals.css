@@ -1,26 +1,50 @@
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: hsl(240, 20%, 99%);
+    --foreground: hsl(240, 10%, 10%);
+    --card: hsl(0, 0%, 98%);
+    --card-foreground: hsl(240, 10%, 15%);
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(240, 10%, 20%);
+    --primary: hsl(200, 80%, 50%);
+    --primary-foreground: hsl(0, 0%, 100%);
+    --secondary: hsl(160, 70%, 80%);
+    --secondary-foreground: hsl(240, 10%, 15%);
+    --muted: hsl(240, 15%, 90%);
+    --muted-foreground: hsl(240, 10%, 40%);
+    --accent: hsl(280, 80%, 75%);
+    --accent-foreground: hsl(240, 10%, 10%);
+    --destructive: hsl(0, 70%, 50%);
+    --destructive-foreground: hsl(0, 0%, 100%);
+    --border: hsl(240, 15%, 85%);
+    --input: hsl(240, 15%, 85%);
+    --ring: hsl(200, 80%, 40%);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: hsl(240, 10%, 10%);
+    --foreground: hsl(0, 0%, 95%);
+    --card: hsl(240, 10%, 15%);
+    --card-foreground: hsl(0, 0%, 98%);
+    --popover: hsl(240, 10%, 15%);
+    --popover-foreground: hsl(0, 0%, 98%);
+    --primary: hsl(200, 90%, 60%);
+    --primary-foreground: hsl(0, 0%, 100%);
+    --secondary: hsl(160, 50%, 30%);
+    --secondary-foreground: hsl(0, 0%, 98%);
+    --muted: hsl(240, 15%, 25%);
+    --muted-foreground: hsl(240, 10%, 60%);
+    --accent: hsl(280, 70%, 40%);
+    --accent-foreground: hsl(0, 0%, 98%);
+    --destructive: hsl(0, 60%, 40%);
+    --destructive-foreground: hsl(0, 0%, 100%);
+    --border: hsl(240, 15%, 25%);
+    --input: hsl(240, 15%, 25%);
+    --ring: hsl(200, 80%, 50%);
   }
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
